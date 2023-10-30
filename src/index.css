@@ -9,8 +9,32 @@ html{
 
 body{
     padding: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #fff;
+    background: #1D2A35;
 }
 
 button{
     margin-right: 1rem;
+}
+
+.container-fluid,
+.btn {
+    background-color: #04A96D;
+    border-radius: 1rem;
+    font: bold;
+}
+
+.btn{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #198753;
 }
