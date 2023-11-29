@@ -4,8 +4,8 @@ export const useFetch = (url) => {
 
     const [state, setState] = useState({
         data: null,
-        loading: true,
-        error: null
+        isLoading: true,
+        hasError: null
     });
 
     const getFetch = async () => {
@@ -22,14 +22,14 @@ export const useFetch = (url) => {
             setState({
                 data,
                 isLoading: false,
-                error: null
+                hasError: null
             });
         }
         catch (error) {
             setState({
                 data: null,
                 isLoading: false,
-                error: 'No se pudo cargar la info'
+                hasError: 'No se pudo cargar la info'
             });
         }
     }
@@ -41,6 +41,6 @@ export const useFetch = (url) => {
     return {
         data: state.data,
         isLoading: state.isLoading,
-        error: state.error,
+        hasError: state.hasError,
     };
 };
